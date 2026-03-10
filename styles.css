@@ -564,6 +564,7 @@ button {
 .interest__card {
     background: var(--color-bg-card);
     border: 1px solid var(--color-bg-tertiary);
+    border-radius: var(--border-radius-xl);
     /* ERROR 11: Las cards de intereses tienen esquinas puntiagudas en vez de redondeadas
        PISTA: Falta la propiedad border-radius */
     padding: var(--spacing-xl);
@@ -581,6 +582,7 @@ button {
     height: 3px;
     background: var(--gradient-primary);
     transform: scaleX(0);
+    transition: transform var(--transition-base);
     /* ERROR 12 (AVANZADO): La línea superior de las cards aparece instantáneamente sin animación
        SOLUCIÓN: Falta la transición para la propiedad transform
        Agregar: transition: transform var(--transition-base);
