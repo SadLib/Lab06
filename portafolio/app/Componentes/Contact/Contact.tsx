@@ -2,6 +2,8 @@ import React from 'react';
 import styles from './Contact.module.css';
 import Link from 'next/link';
 
+
+
 export default function Contact(){
     return(
         <section className={`section ${styles.contact}`} id="contact">

@@ -146,3 +146,21 @@
     color: white;
     transform: translateY(-2px);
 }
+
+@media screen and (max-width: 1024px) {
+    .interests__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .interests__grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .interest__card {
+        padding: var(--spacing-lg);
+    }
+}

@@ -5,6 +5,7 @@ import Interests from "./Componentes/Interests/Interests";
 import CV from "./Componentes/CV/CV";
 import Projects from "./Componentes/Projects/Projects";
 import Contact from "./Componentes/Contact/Contact";
+import Footer from "./Componentes/Footer/Footer";
 
 export default function Home() {
   return (
@@ -15,7 +16,10 @@ export default function Home() {
     <CV />
     <Projects />
     <Contact />
-  
+    <Footer />
+    <a href="#home" className="scroll-top" id="scroll-top">
+        <i className="fas fa-arrow-up"></i>
+    </a>
     </>
   );
 }

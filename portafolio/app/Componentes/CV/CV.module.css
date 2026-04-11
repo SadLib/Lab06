@@ -124,3 +124,20 @@
     color: var(--color-primary);
     transform: translateX(5px);
 }
+
+@media screen and (max-width: 1024px) {
+    .cv__content {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-2xl);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .cv__buttons {
+        flex-direction: column;
+    }
+
+    .cv__buttons .btn {
+        width: 100%;
+    }
+}

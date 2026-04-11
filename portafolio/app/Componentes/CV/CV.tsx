@@ -2,6 +2,10 @@ import React from 'react';
 import styles from './CV.module.css';
 import Link from 'next/link';
 
+let CvCorreo: string = 'sadrach.nef@gmail.com';
+let CvLinkedin:string = '@N L';
+let CvGithub:string = '@SadLib';
+
 export default function CV(){
     return(
         <section className={`${styles.cv} section`} id="cv">
@@ -42,7 +46,7 @@ export default function CV(){
                                 </div>
                                 <div className={styles.social__info}>
                                     <span className={styles.social__name}>LinkedIn</span>
-                                    <span className={styles.social__user}>@N L</span>
+                                    <span className={styles.social__user}>{CvLinkedin}</span>
                                 </div>
                                 <i className="fas fa-arrow-right social__arrow"></i>
                             </a>
@@ -53,7 +57,7 @@ export default function CV(){
                                 </div>
                                 <div className={styles.social__info}>
                                     <span className={styles.social__name}>GitHub</span>
-                                    <span className={styles.social__user}>@SadLib</span>
+                                    <span className={styles.social__user}>{CvGithub}</span>
                                 </div>
                                 <i className="fas fa-arrow-right social__arrow"></i>
                             </a>
@@ -64,7 +68,7 @@ export default function CV(){
                                 </div>
                                 <div className={styles.social__info}>
                                     <span className={styles.social__name}>Email</span>
-                                    <span className={styles.social__user}>sadrach.nef@email.com</span>
+                                    <span className={styles.social__user}>{CvCorreo}</span>
                                 </div>
                                 <i className="fas fa-arrow-right social__arrow"></i>
                             </a>
