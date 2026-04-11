@@ -106,3 +106,13 @@
     background: var(--color-bg-primary);
     color: white;
 }
+
+.contact__card :global(.btn--primary) {
+    background: white;
+    color: var(--color-primary);
+}
+
+.contact__card :global(.btn--primary:hover) {
+    background: var(--color-bg-primary);
+    color: white;
+}
